@@ -1,3 +1,19 @@
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../assets/esther-pig.jpeg');
+    background-size: cover;
+
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
 .hidden {
     display: none;
 }

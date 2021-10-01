@@ -1,6 +1,7 @@
 const button = document.getElementById('button');
 const paragraph = document.getElementById('story');
-const input = document.getElementById('input');
+const input = document.querySelector('.input');
+
 const noun1text = document.getElementById('noun1');
 const noun2text = document.getElementById('noun2');
 const noun3text = document.getElementById('noun3');
@@ -19,8 +20,22 @@ const verb2 = document.getElementById('verb-2');
 const adjective1 = document.getElementById('adjective-1');
 const adjective2 = document.getElementById('adjective-2');
 
+const oink = new Audio('./assets/oink.mp3');
+
 button.addEventListener('click', () => {  
-input.classList.add('hidden');
-paragraph.classList.remove('hidden');
+    oink.play();
+
+    input.classList.add('hidden');
+    paragraph.classList.remove('hidden');
+
+    noun1.innerText = noun1text.value;
+    noun2.innerText = noun2text.value;
+    noun3.innerText = noun3text.value;
+    adverb1.innerText = adverb1text.value;
+    verb1.innerText = verb1text.value;
+    verb2.innerText = verb2text.value;
+    adjective1.innerText = adjective1text.value;
+    adjective2.innerText = adjective2text.value;
+
 });
 
