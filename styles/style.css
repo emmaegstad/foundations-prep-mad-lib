@@ -1,5 +1,3 @@
-
-
 body {
     display: flex;
     flex-direction: column;
@@ -9,11 +7,50 @@ body {
 
 }
 
+.text {
+  font-family: MedievalSharp;
+  color: peachpuff;
+  text-shadow: 3px 3px tomato;
+}
+
+#header1 {
+  font-size: 10vh;
+  color: tomato;
+  text-shadow: 3px 3px peachpuff;
+}
+
+#story { 
+  font-size: 5vh;
+  width: 800px;
+}
+
 .input {
     display: flex;
     flex-direction: column;
 }
 
+input {
+  margin-bottom: 15px;
+  background: rgba(136, 40, 23, 0.5);
+  font-family: MedievalSharp;
+  color: white;
+}
+
+label {
+  text-align: center;
+  font-size: 3vh;
+}
+
 .hidden {
     display: none;
+}
+
+button { 
+  background-color: darkred;
+}
+
+span {
+  color: tomato;
+  text-shadow: 2px 2px peachpuff;
+  text-decoration: underline;
 }
